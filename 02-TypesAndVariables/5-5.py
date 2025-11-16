@@ -1,0 +1,8 @@
+price = int(input("Enter price: "))
+discount = int(input('Enter discount: %'))
+discounted_price = round(price-discount*price*0.01,2)
+amount_saved = round(price-discounted_price,2)
+print (f'regular price:{price}')
+print(f'discount: {discount}%')
+print(f'discounted price:{discounted_price}')
+print(f'amount saved: {amount_saved}')
