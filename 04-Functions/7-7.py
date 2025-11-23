@@ -3,5 +3,11 @@
 
 
 def f(binary_number):
-    if binary_number == bin
-    
+    for digit in binary_number:
+        if digit not in ['0', '1']:
+            return False
+    return True
+        
+
+
+print(f('11110a'))
