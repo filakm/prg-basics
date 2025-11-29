@@ -4,7 +4,8 @@
 def weekday(n):
     weekdays = ["Monday", "Tuesday", "Wednesday",
          "Thursday", "Friday", "Saturday", "Sunday"]
+    
     return weekdays[int(n-1)]
-
-print(weekday(6))
+number = 7
+print(f'{number}-{weekday(number)}')
 ...   
