@@ -1,13 +1,11 @@
-temperatures = [
- 3, 7, 1, -2, 6, -4, 5, 1, 2, 3,
- 4, -1, 0, 2, -1, -2, 5, -2, 7, 2,
- -1, 4, 1, -4, 2, 3, 6, 7, 5, 7
+# 3x3 Tic-Tac-Toe board
+tic_tac_toe_board = [
+   ['X', 'O', 'X'],
+   [' ', 'X', 'O'],
+   ['O', ' ', 'X']
 ]
-temp_total =0
-count = 0
-for temp in temperatures:
-   temp_total +=temp
-   count +=1
-avg_temp = temp_total/count
 
-print (avg_temp)
+for row in tic_tac_toe_board:
+   for p in row:
+      print(p, end=" ")
+   print()
