@@ -8,7 +8,7 @@ final = 0
 for product in product_quantities:
     for price in product_prices[n:n+1]:
         prc = price*product
-        n=+1
+        n+=1
     final +=prc
 
 

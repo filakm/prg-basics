@@ -1,3 +1,4 @@
+
 # Weekly expenses for different categories
 # [Food, Transport, Utilities]
 monthly_expenses = [
@@ -7,26 +8,30 @@ monthly_expenses = [
    [210, 65, 95]    # Week 4
 ]
 
-# Calculates expenses
-# Use loop statements
-week1 = 0
-week2 = 0
-week3 = 0
-week4 = 0
+# Calculates total monthly expenses per category
+total_food = 0
+total_transport = 0
+total_utilities = 0
 
-for row in monthly_expenses:
+for week in monthly_expenses:
+    total_food += week[0]
+    total_transport += week[1]
+    total_utilities += week[2]
 
-    ew
+# Calculates total weekly expenses
+week_totals = []
+for week in monthly_expenses:
+    # Use the built-in sum() function for simplicity
+    week_totals.append(sum(week))
 
 # Print expenses
 print('MONTHLY EXPENSES')
 print('----------------')
-print('Food:',...)
-print('Transport:',...)
-print('Utilities:',...)
-print('Week 1:',week1)
-print('Week 2:',week2)
-print('Week 3:',week3)
-print('Week 4:',week4)
+print('Food:', total_food)
+print('Transport:', total_transport)
+print('Utilities:', total_utilities)
+print('Week 1:', week_totals[0])
+print('Week 2:', week_totals[1])
+print('Week 3:', week_totals[2])
+print('Week 4:', week_totals[3])
 print('---------------')
-print('TOTAL:',...)
