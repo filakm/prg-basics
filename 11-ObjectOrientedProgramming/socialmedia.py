@@ -6,4 +6,7 @@ class SocialMediaProfile:
     def add_post(self, content):
         self.posts.append(content)
         print(f"{self.username} added a new post: {content}")
+    def display_timeline(self):
+        print(f'Username: {self.username}')
+        
 
